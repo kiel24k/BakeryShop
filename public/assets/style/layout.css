@@ -1,0 +1,75 @@
+:root {
+    --button-color: #F3A446;
+    --background-color: #A06235;
+    --main-color: #141313;
+    --primary-color: #1D1D1D;
+    --base-color: #EFEFEF;
+    --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#navbar {
+    /* background-image: url('/assets/background/bgsix.jpg'); */
+    background-color: var(--primary-color);
+    z-index: 99;
+
+}
+
+.links {
+    color: var(--base-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    text-transform: capitalize;
+    height: 60px;
+
+
+}
+
+.nav-title {
+    /* position:relative;
+    top:5rem; */
+}
+
+nav .nav-link {
+    color: var(--base-color);
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: linear all 0.2s;
+}
+
+nav .nav-link:hover {
+    background-color: var(--button-color);
+    border-radius: 5px;
+    color: var(--main-color);
+}
+
+.nav-action img {
+    max-width: 20px;
+}
+
+
+
+
+.footer {
+    background-color: var(--main-color);
+    display: grid;
+    color: White;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.footer img {
+border-radius: 50%;
+    max-width: 70px;
+    margin: auto;
+}
