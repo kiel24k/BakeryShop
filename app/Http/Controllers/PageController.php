@@ -11,5 +11,6 @@ class PageController extends Controller
     }
     public function products(){
         return view('user.page.product');
+        //hahahaha
     }
 }
