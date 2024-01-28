@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width: 100%;
+    background-color:#6649eb;
+    display: flex;
+    justify-content:right;
+    align-content: center;
+    align-items: center;
+    gap:25px;
+    height: 4rem;
+}
+header > div{
+
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+    gap:15px;
+    margin: auto;
+    justify-content: center;
+
+}
+.content > div{
+    border-radius: 25px;
+    height:14rem;
+    text-align:center;
+    transition: all linear 0.2s;
+
+
+}
+
+.one {
+    background-color:#da5c36;
+    width:16rem;
+}
+.two {
+    background-color: #449afc;
+    width:16rem;
+
+}
+.three {
+    background-color: #47ba62;
+    width:16rem;
+}
+.four {
+    background-color:#415fdf;
+    width:14rem;
+}
+.five {
+    background-color: #da5167;
+    width:14rem;
+}
+.six {
+    background-color: #939393;
+    width:14rem;
+
+}
+.tinapay{
+    width: 30rem;
+}
+form{
+    display: grid;
+    gap:25px;
+}
+.tinapay input{
+    border-radius: 5px;
+    border-color:rgb(160, 134, 134);
+    padding:20px;
+}
+
