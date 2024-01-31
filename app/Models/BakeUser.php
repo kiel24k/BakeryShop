@@ -10,12 +10,14 @@ class BakeUser extends Model
     use HasFactory;
     protected $fillable = [
         'id',
+        'reserved_product',
         'first_name',
-        'middle_name',
         'last_name',
+        'user_email',
         'place',
         'contact_number',
-        'block',
-        'lot',
+        'quantity',
+        'amount',
+
     ];
 }

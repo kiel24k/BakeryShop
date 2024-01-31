@@ -56,141 +56,27 @@
 
             </div>
             <div class="home-items">
+                @foreach ($items as $item )
                 <div class="item-main">
                     <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
+                        <img src="images/{{ $item->product_image }}" alt="" width="250px" height="250px">
                     </div>
                     <div class="item-info">
                         <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
                     </div>
                     <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
+                        <p>${{ $item->product_price }}</p>
+                        <p>{{ $item->product_quantity }}/pcs</p>
                     </div>
                     <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
+                        <h5>{{ $item->product_name }}</h5>
+                        <a href="{{ route('checkout', $item->id) }}">
+                            <button><b>View</b></button>
+                        </a>
                     </div>
+                </div>
+                @endforeach
 
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-
-                </div>
-                <div class="item-main">
-                    <div class="item-image">
-                        <img src="{{ asset('assets/item/breadOne.webp') }}" alt="" width="250px">
-                    </div>
-                    <div class="item-info">
-                        <img src="{{ asset('assets/icon/info.png') }}" alt="" width="25px">
-                    </div>
-                    <div class="item-price-info">
-                        <p>₱6.00</p>
-                        <p>390g</p>
-                    </div>
-                    <div class="item-name-add">
-                        <h5>Whole Grain Spelt</h5>
-                        <button><b>Add</b></button>
-                    </div>
-                </div>
             </div>
             <div class="home-sample">
                 <button><b>View All</b></button>

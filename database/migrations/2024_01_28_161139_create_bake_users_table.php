@@ -13,15 +13,14 @@ return new class extends Migration
     {
         Schema::create('bake_users', function (Blueprint $table) {
             $table->id();
+            $table->string('reserved_product');
             $table->string('first_name');
-            $table->string('middle_name');
             $table->string('last_name');
-            $table->enum('place', ['Solar Homes','City Homes']);
             $table->string('contact_number');
-            $table->string('block');
-            $table->string('lot');
-
-
+            $table->string('user_email');
+            $table->integer('quantity');
+            $table->float('amount', 8, 2);;
+            $table->enum('place', ['Solar Homes','City Homes']);
 
             $table->timestamps();
         });

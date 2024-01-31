@@ -17,15 +17,14 @@ class BakeUserFactory extends Factory
     public function definition(): array
     {
         return [
+            'amount' => '50000',
+            'quantity' => 12,
+            'reserved_product' =>fake()->name(),
             'first_name'  => fake()->name(),
-            'middle_name'  => fake()->name(),
             'last_name'  => fake()->name(),
-            'place'  => 'Solar Homes',
             'contact_number'  => fake()->name(),
-            'block'  => fake()->name(),
-            'lot' => fake()->name(),
-
-
+            'user_email'  => fake()->email(),
+            'place'  => 'Solar Homes',
         ];
     }
 }

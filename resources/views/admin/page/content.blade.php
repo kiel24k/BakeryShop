@@ -5,18 +5,20 @@
 @endif
 <section class="content">
     <div class="one">
+       <a href="{{ route('product.list') }}" class="nav-link">
         <h1 class="text-white">Products</h1>
+       </a>
         <h3>{{ $product }}</h3>
     </div>
     <div class="two">
         <h1 class="text-white">Income</h1>
-        <h3>$121</h3>
+        <h3>₱{{ $income }}</h3>
     </div>
     <div class="three">
         <a href="{{ route('user.list') }}" class="nav-link">
             <h1 class="text-white">Users</h1>
         </a>
-        <h3>34</h3>
+        {{-- <h3>{{ $users }}</h3> --}}
         </div>
 
 
@@ -31,11 +33,8 @@
     </div>
 
 <div class="tinapay">
-    <form action="{{ route('product.submit') }}" method="POST">
+    <form action="{{ route('product.submit') }}" method="POST" enctype="multipart/form-data">
         @csrf
-
-
-
         @error('name')
         <p class="alert alert-danger">{{ $message }}</p>
         @enderror
